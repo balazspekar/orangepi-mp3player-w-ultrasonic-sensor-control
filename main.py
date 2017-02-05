@@ -11,9 +11,12 @@ def main():
     player.load_file()    
     player.play()
     print("wait")
-    time.sleep(10)
+    for i in reversed(range(10)):
+        print(i)
+        time.sleep(1)
     print("tryna stop")
     player.stop()
+    print("exiting")
 
 if __name__ == "__main__":
     main()

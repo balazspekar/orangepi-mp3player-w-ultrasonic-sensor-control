@@ -10,7 +10,7 @@ class Player:
 
     def play(self):
         threading.Thread(target=self._play).start()
-        print("Playing...")
+        print("PLAYER: play()")
 
     
     def _play(self):
@@ -21,6 +21,11 @@ class Player:
 
     def pause(self):
         pass
+
+
+    def stop(self):
+        pygame.mixer.music.stop()
+        return "PLAYER: stop()"
 
 
     def next(self):

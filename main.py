@@ -1,6 +1,6 @@
 from modules.sensor import Sensor
 from modules.player import Player
-
+import time
 
 def main():
     sensor = Sensor()
@@ -10,7 +10,10 @@ def main():
     player = Player()
     player.load_file()    
     player.play()
-    #print("visszatert")
+    print("wait")
+    time.sleep(10)
+    print("tryna stop")
+    player.stop()
 
 if __name__ == "__main__":
     main()

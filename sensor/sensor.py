@@ -32,4 +32,5 @@ class Sensor():
 
         distance = pulse_duration * 17150
 
-        return round(distance, 2)
+        return int(distance)
+        #return round (distance, 2)
